@@ -291,3 +291,60 @@ main h3 {
     top: -1.5em;
   }
 }
+/* General Mobile Styles */
+@media screen and (max-width: 900px) {
+  /* Main content and boxes */
+  main {
+    position: relative;
+    top: 2em;
+    padding: 0 1em; /* Add some padding for mobile */
+  }
+
+  .emotion-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    width: 100%;
+  }
+
+  .emotion-buttons .round-button {
+    width: 8rem; /* Increased size for better visibility */
+    height: 8rem;
+    margin: 1em 0; /* Larger margin for more space between buttons */
+  }
+
+  .emotion-buttons p {
+    width: 90%; /* Ensure the text is centered and fits well */
+    height: auto;
+    margin-top: 1.5em; /* Ensure the passage text appears below */
+  }
+
+  /* Boxes */
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  /* Quotes display adjustment */
+  .emotion-buttons .quote.show {
+    display: block;
+    width: 90%;
+    margin: 0.5em auto;
+  }
+}
+
+/* Small Devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .emotion-buttons .round-button {
+    width: 15rem; /* Slightly smaller for very small screens */
+    height: 10rem;
+    margin: 0.75em 0; /* Maintain good spacing */
+  }
+
+  main h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+}
