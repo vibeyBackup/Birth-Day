@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d81457d759.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../IMAGE/love-letter.png"
+      type="image/x-icon"
+    />
+    <title>A Letter For When...</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <aside class="titlelogo">
+          <span class="imgSpan"
+            ><img src="../IMAGE/love-letter.png" alt="" height="10px"
+          /></span>
+        </aside>
+        <section class="nav-links">
+          <input id="check" type="checkbox" />
+          <label for="check" id="checkID">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="nav-items">
+            <li>
+              <a href="index.html">LETTERS&nbsp;❤</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <h3>
+        Select your vibe, gather your tissues <br />
+        and let those emotions run wild!
+      </h3>
+
+      <section class="emotion-buttons">
+        <button onclick="displayQuote1()" class="round-button" id="scared">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f623/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f623/512.gif"
+              alt="😣"
+              class="emoji"
+              width="34"
+              height="34"
+            />
+          </picture>
+          <span class="emotion-word">SCARED</span>
+        </button>
+        <p id="quote3" class="quote"></p>
+
+        <button onclick="displayQuote2()" class="round-button" id="uninspired">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f621/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f621/512.gif"
+              alt="😡"
+              class="emoji"
+              width="34"
+              height="34"
+            />
+          </picture>
+          <span class="emotion-word">&nbsp;&nbsp;ANGRY&nbsp;&nbsp;</span>
+        </button>
+        <p id="quote2" class="quote"></p>
+
+        <button onclick="displayQuote3()" class="round-button" id="inspired">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f970/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f970/512.gif"
+              alt="🥰"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <span class="emotion-word">CRAVE&nbsp;LOVE</span>
+        </button>
+        <p id="quote1" class="quote"></p>
+
+        <button onclick="displayQuote4()" class="round-button" id="happy">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f636_200d_1f32b_fe0f/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f636_200d_1f32b_fe0f/512.gif"
+              alt="😶"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <br />
+          <span class="emotion-word">ALONE</span>
+        </button>
+        <p id="quote5" class="quote"></p>
+
+        <button onclick="displayQuote5()" class="round-button" id="sad">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif"
+              alt="😞"
+              class="emoji"
+              width="34"
+              height="34"
+            />
+          </picture>
+          <br />
+          <span class="emotion-word">SAD</span>
+        </button>
+        <p id="quote4" class="quote"></p>
+
+        <button onclick="displayQuote6()" class="round-button" id="tired">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f927/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f927/512.gif"
+              alt="🤧"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <br />
+          <span class="emotion-word">DOWN&nbsp;</span>
+        </button>
+        <p id="quote6" class="quote"></p>
+
+        <br />
+        <button onclick="displayQuote7()" class="round-button" id="scared">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f30d/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f30d/512.gif"
+              alt="🌍"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <span class="emotion-word">LEFT&nbsp;OUT</span>
+        </button>
+        <p id="quote3" class="quote"></p>
+
+        <button onclick="displayQuote8()" class="round-button" id="uninspired">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f3f3_fe0f/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3f3_fe0f/512.gif"
+              alt="🏳"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <span class="emotion-word">&nbsp;&nbsp;GIVE&nbsp;UP</span>
+        </button>
+        <p id="quote2" class="quote"></p>
+
+        <button onclick="displayQuote9()" class="round-button" id="inspired">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f_200d_1fa79/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f_200d_1fa79/512.gif"
+              alt="❤"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <span class="emotion-word">LET&nbsp;GO</span>
+        </button>
+        <p id="quote1" class="quote"></p>
+
+        <button onclick="displayQuote10()" class="round-button" id="happy">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f389/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f389/512.gif"
+              alt="🎉"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <br />
+          <span class="emotion-word">&nbsp;PROUD</span>
+        </button>
+        <p id="quote5" class="quote"></p>
+
+        <button onclick="displayQuote11()" class="round-button" id="sad">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f308/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f308/512.gif"
+              alt="🌈"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <br />
+          <span class="emotion-word">LOVE&nbsp;U</span>
+        </button>
+        <p id="quote4" class="quote"></p>
+
+        <button onclick="displayQuote12()" class="round-button" id="tired">
+          <picture>
+            <source
+              srcset="
+                https://fonts.gstatic.com/s/e/notoemoji/latest/1f63e/512.webp
+              "
+              type="image/webp"
+            />
+            <img
+              src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f63e/512.gif"
+              alt="😾"
+              class="emoji"
+              width="32"
+              height="32"
+            />
+          </picture>
+          <br />
+          <span class="emotion-word">HATE&nbsp;U</span>
+        </button>
+        <p id="quote6" class="quote"></p>
+      </section>
+
+      <!-- quote  -->
+      <section class="desktop">
+        <div class="box">
+          <p id="quote-desktop" class="quote22"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
